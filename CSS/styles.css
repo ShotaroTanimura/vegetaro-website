@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+.balloon {
+  width: 15vw; /* Use viewport units for responsiveness */
+  height: 15vw; /* This will make the image responsive to screen size */
+  border-radius: 50%;
+  opacity: 0; /* Set initial opacity to 0 so the image is invisible */
+  transition: opacity 1s; /* This will animate the appearance of the image */
+  position: fixed;
+  bottom: -17vw; /* Start from below the viewport */
+}
+
+.content {
+  height: 300vh; /* Ensure the page is scrollable */
+  padding: 2vw; /* Padding for responsiveness */
+}
+
+/* Wrapper to contain all balloon images */
+.balloon-wrapper {
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center images horizontally */
+  flex-wrap: nowrap; /* Prevent balloons from wrapping to the next line */
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+.balloon {
+  width: 12vw; /* Adjust based on your design preference */
+  height: 12vw;
+  border-radius: 50%;
+  opacity: 0; /* Set initial opacity to 0 so the image is invisible */
+  transition: opacity 1s; /* This will animate the appearance of the image */
+  margin: 1vw; /* Space between balloons */
+}
+
+/* Adjust initial positions for each balloon */
+.balloon {
+  width: 12vw; /* Reduced width to ensure all balloons fit */
+  height: 10vw;
+  /* ... other styles ... */
+}
+
+.balloon1 { left: 4vw; }
+.balloon2 { left: 15vw; }
+.balloon3 { left: 26vw; }
+.balloon4 { left: 37vw; }
+.balloon5 { left: 48vw; }
+.balloon6 { left: 59vw; }
+.balloon7 { left: 70vw; }
+.balloon8 { left: 81vw; } 
