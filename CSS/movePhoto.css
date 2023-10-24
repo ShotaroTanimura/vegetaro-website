@@ -1,0 +1,16 @@
+.move-photo {
+  position: fixed; /* Use fixed position to ensure it appears in the current view */
+  top: 50%; /* Center it vertically */
+  left: -100%; /* Hide it to the left initially */
+  opacity: 0; /* Make it transparent */
+  transform: translateY(-50%); /* Adjust for exact vertical centering */
+  width: 100%; /* Make the image full width for responsiveness */
+  max-width: 500px; /* You can adjust this value as per your design preference */
+}
+
+/* Responsive design: For screens less than 600px */
+@media (max-width: 600px) {
+  .move-photo {
+      width: 90%; /* Adjust the width to fit smaller screens */
+  }
+}
