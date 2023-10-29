@@ -1,0 +1,12 @@
+.vege-photo {
+  display: none; 
+  position: fixed;
+  top: 0;
+  width: 30vh; /* Adjust size as needed */
+  z-index: 10; /* Make sure they appear on top of other content */
+}
+@media (max-width: 600px) {
+  .vege-photo {
+      width: 20vh; /* Adjust the width to fit smaller screens */
+  }
+}

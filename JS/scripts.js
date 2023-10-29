@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $(window).on('scroll', function() {
       let scrollTop = $(this).scrollTop();
-      if (!isBalloonShown && scrollTop > 100) { 
+      if (!isBalloonShown && scrollTop > 10) { 
           // Show balloons in order with a delay between each
           balloons.each(function(index, balloon) {
               setTimeout(function() {

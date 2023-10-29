@@ -1,0 +1,24 @@
+.turu-photo {
+  width: 20vw;
+  opacity: 0;  /* Set initial opacity to 0 */
+  position: fixed;
+  transition: opacity 1s;  /* Add transition for smooth fade-in and fade-out */
+  pointer-events: none;  /* Prevent interactions when the image is invisible */
+}
+
+
+.turu1 {
+  left: 0;
+  bottom: 5vh;
+}
+
+.turu2 {
+  right: 0;
+  top: 5vh;
+}
+
+@media (max-width: 600px) {
+  .turu-photo {
+      width: 30vh; /* Adjust the width to fit smaller screens */
+  }
+}

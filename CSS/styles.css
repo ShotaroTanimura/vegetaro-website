@@ -24,6 +24,7 @@ body {
   justify-content: center; /* Center images horizontally */
   flex-wrap: nowrap; /* Prevent balloons from wrapping to the next line */
   overflow-x: hidden; /* Hide horizontal scroll */
+
 }
 
 .balloon {
