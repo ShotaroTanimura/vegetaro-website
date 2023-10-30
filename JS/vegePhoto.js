@@ -18,7 +18,7 @@ $(document).ready(function() {
           'transform': 'rotate(' + randomRotation + 'deg)'
       }).show().animate({
           'top': $(window).height() + 'px'  // Make it fall off the screen
-      }, 3000, function() {
+      }, 2000, function() {
           // Hide and reset position after animation
           $selectedVege.hide().css('top', '0');
       });

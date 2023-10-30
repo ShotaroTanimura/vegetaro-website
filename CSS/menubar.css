@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #F7DC8B;
+  position: fixed; /* This keeps the navbar fixed on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8; /* This ensures navbar stays above other content */
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.menu li a {
+  color: #001F2B;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #BAC870;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed; /* This keeps the mobile menu fixed */
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #F7DC8B;
+  overflow-y: auto;
+  transition: right 0.3s;
+  z-index: 9; /* This ensures mobile menu is below navbar but above other content */
+}
+
+.mobile-menu .close-icon {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.mobile-menu li a:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+      display: none;
+  }
+
+  .mobile-menu-icon {
+      display: block;
+  }
+}
